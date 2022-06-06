@@ -1,0 +1,13 @@
+{
+    "name": "docker_test",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "serve . -p 3001",
+        "start:server": "node server-fs.js",
+        "learn:nginx": "docker-compose -f learn-nginx.docker-compose.yaml up"
+    },
+    "dependencies": {
+        "serve": "^13.0.2"
+    }
+}

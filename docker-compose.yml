@@ -1,0 +1,10 @@
+# 通过此配置可在 Docker 环境中学习 nginx 的各种指令
+# 如果需要修改配置，验证配置是否生效，可通过 docker-compose 重新启动该容器
+version: "3"
+services:
+  node-app:
+    build:
+      context: .
+      dockerfile: node.Dockerfile
+    ports:
+      - 3001:3001
